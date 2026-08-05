@@ -17,7 +17,7 @@
 
     <section class="aviso">
         <h2>📢 Último comunicado</h2>
-        <p class="fecha">04 de agosto de 2026</p>
+        <p class="fecha" id="fecha"></p>
 
         <p>
             En la reunión de ayer 03-08-26 via meet, en la que participaron 20 apoderados, se trataron distintos temas, principalmente relacionados con la gala y las actividades de fin de año. Queremos informar que se llegaron a los siguientes acuerdos,  debido al escaso compromiso que han demostrado algunos apoderados. 
@@ -67,6 +67,18 @@ Los acuerdos adoptados fueron los siguientes:
 <footer>
     Directiva del Curso © 2026
 </footer>
+    
+<script>
+    const hoy = new Date();
 
+    const fecha = hoy.toLocaleDateString('es-CL', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+    });
+
+    document.getElementById("fecha").textContent = fecha;
+</script>
+    
 </body>
 </html>
