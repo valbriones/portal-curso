@@ -96,6 +96,30 @@ Los acuerdos adoptados fueron los siguientes:
     });
 
     document.getElementById("fecha").textContent = fecha;
+
+ // ==========================
+ // RIFA
+ // ==========================
+
+const contenedor = document.getElementById("rifa");
+
+for (let i = 1; i <= 200; i++) {
+
+    const numero = document.createElement("div");
+
+    numero.className = "numero";
+
+    numero.textContent = i.toString().padStart(3, "0");
+
+    numero.onclick = function () {
+
+        numero.classList.toggle("vendido");
+
+    };
+
+    contenedor.appendChild(numero);
+
+}
 </script>
     
 </body>
