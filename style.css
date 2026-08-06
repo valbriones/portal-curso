@@ -40,3 +40,32 @@ footer{
     padding:20px;
     color:#777;
 }
+/* ===========================
+   VENTA DE RIFA
+=========================== */
+
+#rifa{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    gap:8px;
+    margin-top:20px;
+}
+
+.numero{
+    background:#4CAF50;
+    color:white;
+    text-align:center;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.numero:hover{
+    transform:scale(1.05);
+}
+
+.vendido{
+    background:#d32f2f;
+}
