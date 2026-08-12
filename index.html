@@ -68,19 +68,6 @@ Los acuerdos adoptados fueron los siguientes:
         </ul>
     </section>
     
-<section class="aviso">
-
-    <h2>🎟 Venta de Rifa</h2>
-
-    <p>
-        Vendidos: <strong id="vendidos">0</strong> |
-        Disponibles: <strong id="disponibles">200</strong>
-    </p>
-
-    <div id="rifa"></div>
-
-</section>
-
 </main>
 
 <footer>
@@ -97,30 +84,6 @@ Los acuerdos adoptados fueron los siguientes:
     });
 
     document.getElementById("fecha").textContent = fecha;
-
- // ==========================
- // RIFA
- // ==========================
-
-const contenedor = document.getElementById("rifa");
-
-for (let i = 1; i <= 200; i++) {
-
-    const numero = document.createElement("div");
-
-    numero.className = "numero";
-
-    numero.textContent = i.toString().padStart(3, "0");
-
-    numero.onclick = function () {
-
-        numero.classList.toggle("vendido");
-
-    };
-
-    contenedor.appendChild(numero);
-
-}
 </script>
     
 </body>
